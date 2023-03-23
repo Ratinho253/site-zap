@@ -1,6 +1,13 @@
 'use strict'
 
-import { contatos } from "./contatos.js"
+// import { contatos } from "./contatos.js"
+
+import { pesquisarTelefone } from "./import-API/api.js"
+
+const contatos = await pesquisarTelefone('11987876567')
+// const contatos = await pesquisarTelefone('11966578996')
+// const contatos = await pesquisarTelefone('11955577796')
+// const contatos = await pesquisarTelefone('11944577962')
 
 const criarContato = (contato, indice) => {
 
